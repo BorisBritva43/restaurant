@@ -20,7 +20,7 @@ export default class Landing extends React.Component {
    };
 
    goToRestaurant = () => {
-      console.log('go to restourant');
+      console.log('go to restourant!');
    };
 
    render() {
