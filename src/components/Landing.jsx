@@ -20,7 +20,8 @@ export default class Landing extends React.Component {
    };
 
    goToRestaurant = () => {
-      console.log('go to restourant');
+      const { url } = this.state;
+      this.props.history.push(`/restaurant/${url}`);
    };
 
    render() {
