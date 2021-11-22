@@ -1,14 +1,8 @@
-/*
-  Анимация:
-  enter
-  exit
-*/
-
 .order-enter 
   transition: 0.5s;
   transform: translateX(-120%);
   max-height: 0;
-  &.order-enter-active
+  &.order-enter-active 
     transform: translateX(0);
     max-height: 60px;
     padding: 2rem 0 !important;
@@ -16,14 +10,14 @@
 .order-exit 
   transition: 0.5s;
   transform: translateX(0);
-  &.order-exit-active
+  &.order-exit-active 
     transform: translateX(120%);
     padding: 0;
 
 .count-enter
   transition: 0.5s;
   transform: translateY(100%);
-  &.count-enter-active
+  &.count-enter-active 
     transform: translateY(0);
 
 .count-exit
@@ -32,5 +26,6 @@
   position: absolute;
   left: 0;
   bottom: 0;
-  &.count-exit-active
+  &.count-exit-active 
     transform: translateY(-100%);
+    
